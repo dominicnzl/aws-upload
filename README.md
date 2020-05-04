@@ -1,4 +1,3 @@
-"# aws-upload" 
 # Credits: Amigoscode
 Video tutorial hier te vinden: https://youtu.be/i-hoSg8iRG0
 
