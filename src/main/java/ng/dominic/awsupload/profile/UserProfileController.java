@@ -10,7 +10,6 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("api/v1/user-profile")
-@CrossOrigin("*") // tijdelijk -> hierdoor is het mogelijk om vanuit react app hier bij te komen
 public class UserProfileController {
 
     private final UserProfileService userProfileService;
