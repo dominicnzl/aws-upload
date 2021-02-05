@@ -14,13 +14,14 @@ public class AmazonConfig {
 
     /**
      * My SuperSecretCredentials were added to .gitignore obviously...
+     *
      * @return
      */
     @Bean
     public AmazonS3 s3() {
-        AWSCredentials awsCredentials = new BasicAWSCredentials(
-                SuperSecretCredentials.ACCESSKEY.getKey(),
-                SuperSecretCredentials.SECRETKEY.getKey());
+        var accesskey = System.getenv().get("AWS_S3_ACCESSKEY");
+        var secretkey = System.getenv().get("AWS_S3_SECRETKEY");
+        AWSCredentials awsCredentials = new BasicAWSCredentials(accesskey, secretkey);
         return AmazonS3ClientBuilder.standard()
                 .withCredentials(new AWSStaticCredentialsProvider(awsCredentials))
                 .withRegion(Regions.EU_CENTRAL_1)
