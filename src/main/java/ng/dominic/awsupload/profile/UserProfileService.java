@@ -17,7 +17,6 @@ public class UserProfileService {
 
     private final FileStore fileStore;
 
-    @Autowired
     public UserProfileService(UserProfileDataAccessService userProfileDataAccessService, FileStore fileStore) {
         this.userProfileDataAccessService = userProfileDataAccessService;
         this.fileStore = fileStore;
