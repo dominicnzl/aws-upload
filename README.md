@@ -7,7 +7,7 @@ Video tutorial hier te vinden: https://youtu.be/i-hoSg8iRG0
 * Frontend: React
 
 ## s3
-Zie AmazonConfig voor de opzet, de werkelijke codes zijn voor nu verborgen achter een .gitignore
+Zie AmazonConfig voor de opzet
 
 ## Backend
 Voor nu geeft de UserProfileDataAccessService altijd een FakeUserProfile terug. Uiteindelijk kan dit veranderd worden naar iets dat uit een echte db komt.

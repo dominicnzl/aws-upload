@@ -2,7 +2,6 @@ package ng.dominic.awsupload.profile;
 
 import ng.dominic.awsupload.bucket.BucketName;
 import ng.dominic.awsupload.filestore.FileStore;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -17,7 +16,6 @@ public class UserProfileService {
 
     private final FileStore fileStore;
 
-    @Autowired
     public UserProfileService(UserProfileDataAccessService userProfileDataAccessService, FileStore fileStore) {
         this.userProfileDataAccessService = userProfileDataAccessService;
         this.fileStore = fileStore;
